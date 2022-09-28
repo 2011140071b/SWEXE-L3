@@ -62,3 +62,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rails-i18n'
+
+gem 'sqlite3' , group: :development
+gem 'pg', '0.21.0', group: :production
