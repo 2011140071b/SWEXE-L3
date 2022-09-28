@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'tweets/:id', to: 'tweets#show'
   get 'tweets/:id/edit', to: 'tweets#edit'
   patch 'tweets/:id', to: 'tweets#update'
+  get 'get_image/:id', to: 'tweets#get_image'
 end

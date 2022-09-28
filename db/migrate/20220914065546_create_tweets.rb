@@ -3,6 +3,7 @@ class CreateTweets < ActiveRecord::Migration[5.2]
     create_table :tweets do |t|
       t.string :message
       t.datetime :tdate
+      t.binary :file
 
       t.timestamps
     end

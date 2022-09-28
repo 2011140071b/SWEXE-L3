@@ -9,5 +9,7 @@
 
 <%= form_for @tweet, url: {action: :update} do |f| %>
     <%= f.text_area :message, size: "20x7" %>
+    <p><%= f.label :file, 'ファイル' %>
+    <%= f.file_field :file %></p>
     <%= f.submit '編集' %>
 <% end %>
