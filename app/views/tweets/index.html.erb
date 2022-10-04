@@ -4,16 +4,20 @@
 
 <br>
 <% @tweets.each do |tweet| %>
-    <p>
+    <div class="tweet_block">
+        <p>
+            <%= image_tag 'tweet_icon.png', class: 'icon' %>
+            匿名 @Anonymous  
+            <%= ((Time.current - tweet.tdate)/60).floor %>分前
+        </p>
         <p><%= tweet.message %></p>
         <p>
             <% if tweet.file %>
                 <%= image_tag "/get_image/#{tweet.id}" %>
             <% end %>
         </p>
-        <p><%= ((Time.current - tweet.tdate)/60).floor %>分前
-        <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+        <p><%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
         <%= link_to '表示', "/tweets/#{tweet.id}" %>
         <%= link_to '編集', "/tweets/#{tweet.id}/edit" %></p>
-    </p>
+    </div>
 <% end %>

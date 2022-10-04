@@ -1,6 +1,11 @@
+<div class="tweet_block">
 <p>
-    <%= @tweet.message %>
+    <%= image_tag 'tweet_icon.png', class: 'icon' %>
+    匿名 @Anonymous  
+    <%= ((Time.current - @tweet.tdate)/60).floor %>分前
 </p>
+
+<p><%= @tweet.message %></p>
 
 <p>
     <% if @tweet.file %>
@@ -9,9 +14,10 @@
 </p>
 
 <p>
-    <%= ((Time.current - @tweet.tdate)/60).floor %>分前
     <%= link_to '削除', "/tweets/#{@tweet.id}", method: :delete %>
     <%= link_to '編集', "/tweets/#{@tweet.id}/edit" %>
 </p>
 
-<%= link_to 'Back', '/' %>
+<%= link_to '戻る', '/' %>
+
+</div>

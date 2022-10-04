@@ -13,3 +13,82 @@
  *= require_tree .
  *= require_self
  */
+
+#header, #content, #footer{
+    width: 70%; 
+    float: right;
+}
+
+#header {
+    
+}
+
+#sidebar {
+    width: 25%; 
+    float: left;
+}
+
+#content {
+    
+}
+
+#footer {
+    
+}
+
+.home_button {
+    
+}
+    
+
+.home_btn_txt {
+    color: #333;
+    text-decoration:none;
+    background-color: #EEE;
+    border-radius: 9999px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 40px;
+}
+
+.tweet_button {
+    
+}
+
+.tweet_btn_txt {
+    color: white;
+    text-decoration:none;
+    background-color: rgb(29, 155, 240);
+    border-radius: 9999px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 40px;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.tweet_block {
+    padding: 10px 30px;
+    border: 1px solid;
+    border-color: #DDD;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.haribote_btn {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.tab {
+    width: 4em;
+    border-bottom: solid;
+    border-color: rgb(29, 155, 240);
+}
