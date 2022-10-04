@@ -1,8 +1,6 @@
-<h1>Twitter</h1>
 <% if flash[:notice] %>
     <%= flash[:notice] %>
 <% end %>
-<p><%= link_to 'ツイートする', '/tweets/new' %></p>
 
 <br>
 <% @tweets.each do |tweet| %>
